@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mapper标签内的namespace所标明的是这个配置文件对应的mapper层的接口的位置-->
+<mapper namespace="com.puge.mybatis.mapper.UserMapper">
+<!--    插入一条数据：id内的的内容是这条sql对应的mapper层的方法-->
+    <insert id="insertUser">
+        insert into user values (1,"刘老黑","男","12","山西省晋中市榆次区安宁街",null ,null ,"ysd@puge.net","ysd99817749");
+    </insert>
+
+</mapper>

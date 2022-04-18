@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DataStructure/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure/DataStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasics/JavaBasics.iml" filepath="$PROJECT_DIR$/JavaBasics/JavaBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/MybatisTest/MybatisDemo01/MybatisDemo01.iml" filepath="$PROJECT_DIR$/JavaWeb/MybatisTest/MybatisDemo01/MybatisDemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/MybatisTest/MybatisTest.iml" filepath="$PROJECT_DIR$/JavaWeb/MybatisTest/MybatisTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/MybatisTest/Mybatis_Demo01/Mybatis_Demo01.iml" filepath="$PROJECT_DIR$/JavaWeb/MybatisTest/Mybatis_Demo01/Mybatis_Demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/SpringBootTest/SpringBootTest.iml" filepath="$PROJECT_DIR$/JavaWeb/SpringBootTest/SpringBootTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Sum_Study.iml" filepath="$PROJECT_DIR$/.idea/Sum_Study.iml" />
     </modules>
   </component>
