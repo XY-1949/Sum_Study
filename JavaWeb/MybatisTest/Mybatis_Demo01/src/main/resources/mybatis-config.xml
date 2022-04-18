@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--上面的是使用的文件的版本号和编码格式-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--下面的是数据库的配置内容-->
+<configuration>
+    <environments default="development">
+        <environment id="development">
+<!--            下面标签的内容是，事务管理的方式，指定的类型-->
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+                <property name="username" value="root"/>
+                <property name="password" value="ysd9981"/>
+            </dataSource>
+        </environment>
+    </environments>
+<!--    下面的是关于映射器的配置内容-->
+    <mappers>
+        <mapper resource="mappers/UserMapper.xml"/>
+    </mappers>
+</configuration>
