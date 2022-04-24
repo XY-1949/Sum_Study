@@ -11,14 +11,18 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+<!--    在MySQL5.7之前的版本，安全性较低，存在任何用户都可以连接上的 test 库，
+所以官方在5.7版本加大了对隐私的保护。并且采用了默认 useSSL = true值防止对数据库的随意修改，
+到了8.0版本，仍然保留了SSL，并且默认值为 true，所以只要将 “?useSSL= false”            -->
+                <property name="url" value="jdbc:mysql://localhost:3306/test?useSSL=false"/>
                 <property name="username" value="root"/>
-                <property name="password" value="ysd9981"/>
+                <property name="password" value="yinsd9981"/>
             </dataSource>
         </environment>
     </environments>
 <!--    下面的是关于映射器的配置内容-->
     <mappers>
+<!--        因为映射的文件配置在resources配置文件内，所以需要通过目录的方式进行指定，被不能通过 .  这种包地址指向的方式调用-->
         <mapper resource="mappers/UserMapper.xml"/>
     </mappers>
 </configuration>
