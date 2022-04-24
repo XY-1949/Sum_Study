@@ -23,7 +23,7 @@ import java.util.*;
 public class InPutSort {
 
     public static void main(String[] args) {
-        int[] sum = {8,14,1,2,3,2,2,4,6,12,0,6,34,21,13,7,9};
+        int[] sum = {8,14,1,2,3,99,2,2,4,6,12,0,6,34,21,13,7,10};
 
         inputSort(sum);
 

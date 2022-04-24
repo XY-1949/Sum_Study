@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JavaBasics" target="1.5" />
+      <module name="JavaBasics" target="8" />
       <module name="JavaWeb" target="1.8" />
       <module name="Mybatis_Demo01" target="8" />
       <module name="MybatisTest" target="1.8" />
