@@ -2,11 +2,9 @@ package com.yinsd.time;
 
 import org.junit.Test;
 
-import java.sql.SQLOutput;
+
 import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.TimeZone;
+
 
 /**
  * @author Yinsd
@@ -22,7 +20,6 @@ public class Calender_test {
     @Test
     public void Calender_test(){
 
-        GregorianCalendar gregorianCalendar = new GregorianCalendar();
         /**
          * 1，实例化：
          *      方式一：创建其子类  GregorianCalendar  的对象
@@ -35,14 +32,11 @@ public class Calender_test {
          *      .setTimeZone()——对给定的时区设置时区
          *      .getTimeZone()——获取指定对象的时区
          *      .getTime()——获取对象的时间
-         *
          */
         //1，创建了一个Calendar的实例化对象
         Calendar calendar = Calendar.getInstance();
         //System.out.println("calendar："+calendar);
 
-        Date date = new Date(1650689584938L);
-        System.out.println("date："+date);
 
         ////将系统当前日期减去5天
         calendar.add(Calendar.DATE,-5);

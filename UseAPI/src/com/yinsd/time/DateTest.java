@@ -33,9 +33,18 @@ public class DateTest {
         long time = System.currentTimeMillis();
         System.out.println(time);
 
-        Date date1 = new Date(1650535433437L);
-        //chou
-        TimeZone timeZone;
+        Date date1 = new Date(time);
+        System.out.println(date1);
+
+        //获取所有的时区数据并封装到一个数组内
+        String[] availableIDs = TimeZone.getAvailableIDs();
+        System.out.println(availableIDs.length);
+        for (String str1:availableIDs) {
+            System.out.println(str1);
+        }
+        TimeZone timeZone = TimeZone.getTimeZone("Africa/Abidjan");
+        System.out.println(timeZone);
+
         Calendar calendar;
         GregorianCalendar  GregorianCalendar;
 

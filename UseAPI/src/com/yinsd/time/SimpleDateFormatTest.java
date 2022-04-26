@@ -2,10 +2,8 @@ package com.yinsd.time;
 
 import org.junit.Test;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.Vector;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @author Yinsd
@@ -13,7 +11,7 @@ import java.util.Vector;
  * Only code and time last forever
  * @date 2022/4/21 9:52 PM
  */
-public class SimpleDateFormat {
+public class SimpleDateFormatTest {
     /**
      * SimpleDateFormat的两个使用：
      *  1，格式化：
@@ -24,6 +22,10 @@ public class SimpleDateFormat {
 
     @Test
     public synchronized void demo01(){
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-dd");
+        String format = simpleDateFormat.format(date);
+        System.out.println(format);
 
 
     }

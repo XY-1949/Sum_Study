@@ -17,9 +17,9 @@ public class Time_test {
     @Test
     public void timeTest(){
         Date date = new Date();
-        Time time = new Time(9981);
-        System.out.println(time);
-        int i = time.compareTo(date);
-        System.out.println("date："+date+"   //\\      " +""+i);
+        Time time = new Time(8,19,36);
+        System.out.println(time);//08:19:36
+        int i = time.compareTo(date);//
+        System.out.println("date："+date+"   //\\      " +""+i);//Tue Apr 26 16:03:51 CST 2022   //\      -1
     }
 }
