@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yinsd</groupId>
+    <artifactId>testDemo</artifactId>
+    <version>1.0.test</version>
+    <description>这是个测试项目</description>
+
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.3.2.RELEASE</version>
+    </parent>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.2.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator-autoconfigure</artifactId>
+            <version>2.3.2.RELEASE</version>
+        </dependency>
+
+<!--        -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+<!--        数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+<!--        lombok依赖-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
+
+<!--        模版引擎-->
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.0.12.RELEASE</version>
+        </dependency>
+
+<!--        mybatis-plus依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+
+        <!-- velocity 模板引擎, Mybatis Plus 代码生成器需要 -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--swagger-->
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+        </dependency>
+    </dependencies>
+
+
+<!--    <properties>-->
+<!--        <spring-boot-starter-web-version>2.3.2.RELEASE</spring-boot-starter-web-version>-->
+<!--        <spring-boot-actuator-autoconfigure-version>2.3.2.RELEASE</spring-boot-actuator-autoconfigure-version>-->
+<!--        <spring-boot-starter-test-version>2.3.2.RELEASE</spring-boot-starter-test-version>-->
+<!--        <spring-boot-starter-thymeleaf-version>2.3.2.RELEASE</spring-boot-starter-thymeleaf-version>-->
+<!--        <mybatis-plus-boot-starter-version>3.2.0</mybatis-plus-boot-starter-version>-->
+<!--        <mybatis-plus-generator-version>3.2.0</mybatis-plus-generator-version>-->
+<!--        <velocity-engine-core-version>2.0</velocity-engine-core-version>-->
+<!--        <lombok-version>1.18.8</lombok-version>-->
+<!--        <springfox-swagger2-version>2.9.2</springfox-swagger2-version>-->
+<!--        <springfox-swagger-ui-version>2.9.2</springfox-swagger-ui-version>-->
+<!--        <swagger-annotations-version>2.1.2</swagger-annotations-version>-->
+<!--        <nekohtml-version>1.9.21</nekohtml-version>-->
+<!--        <mysql-connector-java-version>8.0.28</mysql-connector-java-version>-->
+<!--        <shiro-spring-version>1.4.0</shiro-spring-version>-->
+<!--        <log4j-version>1.2.17</log4j-version>-->
+<!--    </properties>-->
+
+<!--&lt;!&ndash;    <dependencyManagement>&ndash;&gt;-->
+<!--        <dependencies>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-web</artifactId>-->
+<!--                <version>${spring-boot-starter-web-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-actuator-autoconfigure</artifactId>-->
+<!--                <version>${spring-boot-actuator-autoconfigure-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--                <version>${mybatis-plus-boot-starter-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>io.swagger.core.v3</groupId>-->
+<!--                <artifactId>swagger-annotations</artifactId>-->
+<!--                <version>${swagger-annotations-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-test</artifactId>-->
+<!--                <version>${spring-boot-starter-test-version}</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash;        SpringBoot&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+<!--                <version>${spring-boot-starter-thymeleaf-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--                <version>${mybatis-plus-boot-starter-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-generator</artifactId>-->
+<!--                <version>${mybatis-plus-generator-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis.spring.boot</groupId>-->
+<!--                <artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--                <version>2.2.0</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash; velocity 模板引擎, Mybatis Plus 代码生成器需要 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.velocity</groupId>-->
+<!--                <artifactId>velocity-engine-core</artifactId>-->
+<!--                <version>${velocity-engine-core-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.projectlombok</groupId>-->
+<!--                <artifactId>lombok</artifactId>-->
+<!--                <version>${lombok-version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash;swagger&ndash;&gt;-->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>io.springfox</groupId>-->
+<!--                <artifactId>springfox-swagger2</artifactId>-->
+<!--                <version>${springfox-swagger2-version}</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>io.springfox</groupId>-->
+<!--                <artifactId>springfox-swagger-ui</artifactId>-->
+<!--                <version>${springfox-swagger-ui-version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash;NekoHTML 是一个简单地HTML扫描器和标签补偿器(tag balancer) ,使得程序能解析HTML文档并用标准的XML接口来访问其中的信息。-->
+<!--            这个解析器能投扫描HTML文件并“修正”许多作者（人或机器）在编写HTML文档过程中常犯的错误。NekoHTML 能增补缺失的父元素、-->
+<!--            自动用结束标签关闭相应的元素，以及不匹配的内嵌元素标签。NekoHTML 的开发使用了Xerces Native Interface (XNI)，后者是Xerces2的-->
+<!--            实现基础。&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>net.sourceforge.nekohtml</groupId>-->
+<!--                <artifactId>nekohtml</artifactId>-->
+<!--                <version>${nekohtml-version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/mysql/mysql-connector-java &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>mysql</groupId>-->
+<!--                <artifactId>mysql-connector-java</artifactId>-->
+<!--                <version>${mysql-connector-java-version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash;            日志文件Log4j的包&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>log4j</groupId>-->
+<!--                <artifactId>log4j</artifactId>-->
+<!--                <version>${log4j-version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.apache.shiro</groupId>-->
+<!--                <artifactId>shiro-spring</artifactId>-->
+<!--                <version>${shiro-spring-version}</version>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
+
+
+
+
+        </project>
